@@ -1,7 +1,24 @@
 <h1>Gummy Bear Factory</h1>
 
-<ul>
+<p>
+  <%= link_to "Add Products", new_product_path %>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th colspan="8">Cost</th>
+    <th colspan="8">Origin</th>
+    <th colspan="8"></th>
+  </tr>
+
   <% @products.each do |product| %>
-    <li><%= product.name %></li>
+    <tr>
+      <td colspan="8"><%= product.name %></td>
+      <td colspan="8"><%= product.cost %></td>
+      <td colspan="8"><%= product.origin %></td>
+      <td colspan="8"><%= link_to "More Info", product_path(product) %></td>
+      <td><%= link_to "Edit", edit_product_path(product) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
