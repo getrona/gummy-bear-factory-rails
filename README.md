@@ -1,47 +1,23 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
 # Gummy Bear Factory
 
-#### _{Brief description of application}, {Date of current version}_
+#### The site is for the Admin of a Gummy Bear Kingdom, Feb, 10th, 2014
 
 #### By Getro Naissance
 
 ## Description
-
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+  The site include a Products section with a list of all the tasty products offered by the Gummy Bear Kingdom company. The site admins will be able to add, edit and discard new products. Furthermore, users will be able to click an individual Product to see its detail page.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
+* Clone the repository on gihub.
+* Open the terminal and cd into the project folder.
 * _in a simple_
 * _easy-to-understand_
 * _format_8
 *
 * bundle install
 * rails generate rspec:install
-*
+* rake db:create
 *
 *
 *
@@ -66,6 +42,24 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+
+
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
 ### License
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
