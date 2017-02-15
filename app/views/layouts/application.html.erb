@@ -3,42 +3,16 @@
   <head>
     <title>GummyBearKingdom</title>
     <%= csrf_meta_tags %>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <nav>
-    <div class="nav-wrapper">
-      <ul class="left hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li class="active"><a href="#">History</a></li>
-      </ul>
-      <a href="#!" class="brand-logo center">GBK</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
+    <div class="container">
       <%= yield %>
-<footer>
-  <div class="container">
-<div class="row">
-<body>
-<div class="test"><a href="#">
-    <p>Facebook</p></a><a href="#">
-    <p>Twitter</p></a><a href="#">
-    <p>Google+</p></a><a href="#">
-    <p>Github</p></a><a href="#">
-    <p>Dribble</p></a><a href="#">
-    <p>CodePen</p></a></div>
-</body>
-</div>
-</div>
-</footer>
+    </div>
 
   </body>
 </html>
