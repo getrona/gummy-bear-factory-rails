@@ -3,12 +3,9 @@
 <h4>Cost of Product: $ <%= @product.cost %></h4>
 <h4>Origin of Product: <%= @product.origin %></h4>
 
-
+  <%= link_to "Delete", product_path(@product),
+                        :data => {:confirm => "You sure?",
+                        :method => "delete" }%>
 
 
   <%= link_to "Back", products_path %>
-<p>
-  <%= link_to "Delete", product_path(@product),
-                        :data => {:confirm => "You sure?",
-                        :method => "delete"}%>
-</p>
